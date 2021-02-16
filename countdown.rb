@@ -10,7 +10,7 @@ def countdown(number)
   end
 
 def countdown_with_sleep(time)
-  time = sleep 1
+  time = sleep 5
 end
 
 #time = Time.now
