@@ -9,6 +9,11 @@ def countdown(number)
     "HAPPY NEW YEAR!"
   end
 
-def countdown_with_sleep(timer)
-  timer = timer.now(.01)
+def countdown_with_sleep(time)
+  time = timer.now
+  sleep 1.second until time.now > time + 10.seconds
 end
+
+#time = Time.now
+#sleep 2.seconds until Time.now > time + 10.seconds # breaks when true
+# or something like
